@@ -10,12 +10,14 @@ def count_words(path):
     Returns:
         int: The number of words in the file, or None if the file is not found.
     """
+
     try: # error handling if file doesn't exist
         contents = path.read_text(encoding='utf-8')
     except FileNotFoundError:
         print(f"Sorry, the file {path} does not exist.")
         return None
     else:
+        print(contents)
         # Count the number of words in the text file
         words = contents.split()
         num_words = len(words)
@@ -26,5 +28,5 @@ if __name__ == "__main__":
     word_count = count_words(path)
     if word_count is not None:
         print(f"The file {path} has approximately {word_count} words.")
-
+    
 # EOF
