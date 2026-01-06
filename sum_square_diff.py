@@ -51,8 +51,12 @@ def calculate_sum_square_difference(n: int) -> int:
     sq_sum = square_of_sums(n)
     return sq_sum - sum_sq
 
-if __name__ == "__main__":
+def main():
     difference = calculate_sum_square_difference(NUM)
     print(f"The difference between the sum of the squares and the square of the sums "
           f"of the first {NUM} natural numbers is {difference:,}.")
+
+if __name__ == "__main__":
+    main()
+    
 # EOF
