@@ -6,39 +6,38 @@ class Restaurant:
     def __init__(self, name, cuisine_type,):
         """
         Docstring for __init__
+        Initializes the Restaurant with a name and cuisine type.
         
-        :param self: Description
-        :param name: Description
-        :param cuisine_type: Description
+        Args:
+            name (str): The name of the restaurant.
+            cuisine_type (str): The type of cuisine served.
         """
         self.name = name
         self.cuisine_type = cuisine_type
         self.number_served = 0
 
     def describe_restaurant(self):
-        """
-        Docstring for describe_restaurant
-        
-        :param self: Description
-        """
+        """Prints a description of the restaurant."""
         print(f"{self.name} restaurant is a family friendly establishment serving "
               f"{self.cuisine_type} with a kid-friendly menu and crowd.")
     
     def open_restaurant(self):
-        """
-        Docstring for open_restaurant
-        
-        :param self: Description
-        """
+        """Prints a message indicating the restaurant is open."""
         print(f"{self.name} is now open!")
     
-    def customers_served(self):
-        """
-        Docstring for set_number_served
-        
-        :param self: Description
-        """
+    def display_customers_served(self): # Renamed for clarity
+        """Displays the number of customers the restaurant has served."""
         print(f"{self.name} has served over {self.number_served} customers!")
+
+    def set_number_served(self, count: int):
+        """
+        Sets the number of customers served.
+        
+        Args:
+            count (int): The new number of customers served.
+        """
+        self.number_served = count
+
 
 class IceCreamStand(Restaurant):
     """Represent an ice cream stand."""

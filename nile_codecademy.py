@@ -59,8 +59,7 @@ def calculate_driver_cost(distance: float, drivers_dict: dict) -> tuple[float | 
             print(f"Warning: Driver '{driver_name}' is missing 'speed' or 'salary' attribute. Skipping.")
             continue
         if driver.speed <= 0:
-            print(f"Warning: Driver '{driver_name}' 
-            has non-positive speed ({driver.speed}). Skipping.")
+            print(f"Warning: Driver '{driver_name}' has non-positive speed ({driver.speed}). Skipping.")
             continue
 
         driver_time = distance / driver.speed

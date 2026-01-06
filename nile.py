@@ -50,4 +50,4 @@ def format_price(price: float) -> str:
     Returns:
         str: The formatted price string (e.g., "$1.04").
     """
-    return f"${0:.2f}".format(price)
+    return f"${price:.2f}"

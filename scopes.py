@@ -17,4 +17,4 @@ def print_variables():
     print(LAST_NAME)
     print(random_number)
 
-print(globals())
+# print(globals()) # This line is typically for debugging and can be removed in production code.

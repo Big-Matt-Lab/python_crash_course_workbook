@@ -1,13 +1,13 @@
 """Dictionary looping"""
 user_0 = {
     'username': 'enfermi',
-    'first': 'enrico',
-    'last': 'fermi'
+    'first_name': 'enrico', # Renamed for clarity
+    'last_name': 'fermi'    # Renamed for clarity
 }
 
 
-print("Break")
+print("--- User Profile ---") # More descriptive separator
     
-for k, v in user_0.items():
-    print(f"\nKey: {k}")
-    print(f"Value: {v}")
+for key, value in user_0.items(): # Using 'key', 'value' for better readability
+    print(f"\nKey: {key}")
+    print(f"Value: {value}")
